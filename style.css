@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://i.ibb.co/C5LQz3hL/Bibi-Ka-Maqbara.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* dark overlay */
+    z-index: -1;
+    backdrop-filter: blur(2px);
+  }
+  
+  
+  header {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    font-size: 1.6rem;
+    color: #00d4ff;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #00d4ff;
+  }
+  
+  section {
+    padding: 100px 20px 60px;
+    max-width: 900px;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+  }
+  
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #home {
+    margin-top: 80px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #00d4ff;
+  }
+  
+  p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  .upload-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .upload-container:hover {
+    transform: scale(1.02);
+  }
+  
+  .preview-img {
+    width: 100%;
+    max-height: 200px;
+    margin-top: 1rem;
+    object-fit: cover;
+    display: none;
+    border-radius: 8px;
+    border: 2px solid #00d4ff;
+  }
+  
+  #progressBar {
+    width: 100%;
+    margin-top: 1rem;
+    height: 10px;
+    background: #555;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+  }
+  
+  #progressBar div {
+    height: 100%;
+    width: 0;
+    background: #00d4ff;
+    transition: width 0.4s ease;
+  }
+  
+  .btn {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #00d4ff;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: #00bcd4;
+    transform: scale(1.05);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #bbb;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    nav ul li {
+      margin: 10px 0 0;
+    }
+  }
+  
