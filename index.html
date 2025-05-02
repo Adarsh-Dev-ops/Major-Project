@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SnapPortal - Upload Civic Photos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>SnapPortal</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#upload">Upload</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Welcome to SnapPortal</h2>
+  <p>SnapPortal lets you upload photos of civic issues like potholes, water leaks, or unsafe infrastructure. Help improve your city with just a photo.</p>
+</section>
+
+<section id="about">
+  <h2>About SnapPortal</h2>
+  <p>SnapPortal is a community-driven platform that empowers citizens to report issues by simply uploading images. These images help civic authorities prioritize and address problems effectively, making urban life better for everyone.</p>
+</section>
+
+<section id="upload">
+  <h2>Upload Your Photo</h2>
+  <div class="upload-container">
+    <input type="file" id="fileInput" accept="image/*" />
+    <img id="preview" class="preview-img" />
+    <div id="progressBar"><div></div></div>
+    <button class="btn" onclick="uploadImage()">Upload</button>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 SnapPortal | Created by Adarsh
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
