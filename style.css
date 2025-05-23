@@ -1,4 +1,4 @@
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: url('https://i.ibb.co/C5LQz3hL/Bibi-Ka-Maqbara.jpg') no-repeat center center fixed;
+    background: url(https://freeimghost.net/images/2025/05/23/mit.jpg) no-repeat center center fixed; /* Use direct image URL */
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -17,7 +17,8 @@
     min-height: 100vh;
     position: relative;
     z-index: 1;
-  }
+}
+
   
   body::before {
     content: "";
